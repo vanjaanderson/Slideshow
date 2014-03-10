@@ -1,0 +1,91 @@
+/* Caption box */
+#ss_content {
+	width: 700px; 			/* Same width as ss.accordion - see row 66 */
+	padding: 0;
+	border: 0.5em solid white;
+}
+
+.ss_caption {
+	position: absolute;
+	left: 50px;
+	bottom: 0px;
+	padding: 4px 8px 8px 8px;
+	background: rgba(255,255,255,0.8);
+}
+/* Caption text */
+.ss_caption p {
+	font-family: Arial, sans-serif !important;
+	margin-top: 4px !important;
+	font-size: 0.75em;
+	margin: 0;
+	color: black;
+	line-height: 120% !important;
+}
+
+.ss_caption p + p {
+    margin-top: 8px !important;
+}
+/* Heading */
+.ss_heading {
+	margin:0px;
+	text-align: center;
+	text-shadow: -1px 1px 3px #222;
+	-webkit-text-shadow: -1px 1px 3px #222;
+	-moz-text-shadow: -1px 1px 3px #222;
+	-ms-text-shadow: -1px 1px 3px #222;
+	-o-text-shadow: -1px 1px 3px #222;
+	letter-spacing: 1px;
+	width: 200px; 			/* Same width as images height */
+	height: 40px;
+	border-top: 1px solid #666;
+	padding-top: 9px; 		/* height 50px altogether */
+	position: absolute;
+	top: 75px; 				/* width/2 - height/2 */
+	left: -75px; 			/* height/2 - width/2 */
+	background: #444;
+	color: #999;
+	font: 1.5em "Impact" !important;
+}
+
+.ss_rotate {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* Image row */
+ul.ss_accordion {
+	list-style: none;
+	padding: 0;
+	margin:0;
+	height: 200px; 		/* Same height as images height */
+	width: 700px; 		/* Images width + 200px (4 headings) */
+	overflow: hidden;
+	background: #666;
+	position: relative;
+}
+
+ul.ss_accordion + ul.ss_accordion {
+	padding: 0;
+	border-top: 0.5em solid white;
+}
+ 
+.ss_accordion li {
+	position: relative;
+	float: left;
+	height: 200px; 		/* Same height as images heght */
+	width: 50px;
+	overflow: hidden;
+}
+ 
+.ss_accordion li img {
+	float: left;
+	margin-left: 50px;
+}
+ 
+.ss_accordion li.active {
+	width: 550px; 	/*Same width as in plugin.js */
+}

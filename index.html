@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang='en' class='no-js'>
+<head>
+<meta charset='utf-8' />
+<title>Slideshow with horizontal accordion-effect</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="slideshow/jquery-1.11.0.js"></script>
+<script src="slideshow/slideshow.js"></script>
+</head>
+	<body>
+	<div id="wrapper">
+		<h1>Slideshow with horizontal accordion-effect</h1>
+		<div id="release">Release 1.0</div>
+		<p>Place your favourite images in this extensible slideshow-plugin, made in jQuery. <span class="red">Version 1.0 &mdash; now on GitHub!</span></p>
+		<!-- Slideshow starts -->
+		<div id="ss_content">
+			<ul class="ss_accordion">
+				<li>
+				  <img src="slideshow/images/img1.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 1</p>
+				</li>
+				<li>
+				  <img src="slideshow/images/img2.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 2</p>
+				  <div class='ss_caption'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.</p>
+					<p>Another paragraph.</p>
+				  </div>
+				</li>
+				<li>
+				  <img src="slideshow/images/img3.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 3</p>
+				</li>
+				<li>
+				  <img src="slideshow/images/img4.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 4</p>
+				  <div class='ss_caption'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.</p>
+					<p>Another paragraph.</p>
+				  </div>
+			  </li>
+			</ul>
+			<ul class="ss_accordion">
+				<li>
+				  <img src="slideshow/images/img5.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 5</p>
+				</li>
+				<li>
+				  <img src="slideshow/images/img6.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 6</p>
+				  <div class='ss_caption'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.</p>
+					<p>Another paragraph.</p>
+				  </div>
+				</li>
+				<li>
+				  <img src="slideshow/images/img7.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 7</p>
+				  <div class='ss_caption'>
+					<p>A small paragraph, less than a row.</p>
+				  </div>
+				</li>
+				<li>
+				  <img src="slideshow/images/img8.jpg" />
+				  <p class='ss_heading ss_rotate'>Image 8</p>
+				  <div class='ss_caption'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.</p>
+					<p>Another paragraph.</p>
+				  </div>
+			  	</li>
+			</ul>
+		</div>
+		<!-- Slideshow ends -->
+		<!-- Aside div starts -->
+		<div id="aside">
+			<h2>HTML</h2>
+<pre>
+&lt;div id="ss_content">
+<div class="lilacBg">&nbsp;&nbsp;&lt;ul class="ss_accordion">
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img1.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 1&lt;/p></span>
+    &lt;/li>
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img2.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 2&lt;/p></span>
+      <span class="whiteBg">&lt;div class='ss_caption'></span>
+        <span class="whiteBg">&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis</span>
+        <span class="whiteBg">volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.&lt;/p></span>
+        <span class="whiteBg">&lt;p>Another paragraph.&lt;/p></span>
+      <span class="whiteBg">&lt;/div></span>
+    &lt;/li>
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img3.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 3&lt;/p></span>
+    &lt;/li>
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img4.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 4&lt;/p></span>
+      <span class="whiteBg">&lt;div class='ss_caption'></span>
+        <span class="whiteBg">&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis</span>
+        <span class="whiteBg">volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.&lt;/p></span>
+        <span class="whiteBg">&lt;p>Another paragraph.&lt;/p></span>
+      <span class="whiteBg">&lt;/div></span>
+    &lt;/li>
+  &lt;/ul></div>
+<div class="lilacBg">&nbsp;&nbsp;&lt;ul class="ss_accordion">
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img5.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 5&lt;/p></span>
+    &lt;/li>
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img6.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 6&lt;/p></span>
+      <span class="whiteBg">&lt;div class='ss_caption'></span>
+        <span class="whiteBg">&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis</span>
+        <span class="whiteBg">volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.&lt;/p></span>
+        <span class="whiteBg">&lt;p>Another paragraph.&lt;/p></span>
+      <span class="whiteBg">&lt;/div></span>
+    &lt;/li>
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img7.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 7&lt;/p></span>
+      <span class="whiteBg">&lt;div class='ss_caption'></span>
+        <span class="whiteBg">&lt;p>A small paragraph, less than a row.&lt;/p></span>
+      <span class="whiteBg">&lt;/div></span>
+    &lt;/li>
+    &lt;li>
+      <span class="orangeBg">&lt;img src="images/img8.jpg" /></span>
+      <span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 8&lt;/p></span>
+      <span class="whiteBg">&lt;div class='ss_caption'></span>
+        <span class="whiteBg">&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis</span>
+        <span class="whiteBg">volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.&lt;/p></span>
+        <span class="whiteBg">&lt;p>Another paragraph.&lt;/p></span>
+      <span class="whiteBg">&lt;/div></span>
+    &lt;/li>
+  &lt;/ul></div>
+&lt;/div>
+</pre>
+			<h2>CSS</h2>
+<pre>
+/* Caption box */
+#ss_content {
+    <span class="pinkBg">width: 700px;</span>       /* Same width as ss.accordion */
+    padding: 0;
+    border: 0.5em solid white;
+}
+
+.ss_caption {
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    padding: 4px 8px 8px 8px;
+    background: rgba(255,255,255,0.8);
+}
+/* Caption text */
+.ss_caption p {
+    font-family: Arial, sans-serif !important;
+    margin-top: 4px !important;
+    font-size: 0.75em;
+    margin: 0;
+    color: black;
+    line-height: 120% !important;
+}
+
+.ss_caption p + p {
+    margin-top: 8px !important;
+}
+/* Heading */
+.ss_heading {
+    margin:0px;
+    text-align: center;
+    text-shadow: -1px 1px 3px #222;
+    -webkit-text-shadow: -1px 1px 3px #222;
+    -moz-text-shadow: -1px 1px 3px #222;
+    -ms-text-shadow: -1px 1px 3px #222;
+    -o-text-shadow: -1px 1px 3px #222;
+    letter-spacing: 1px;
+    <span class="aquaBg">width: 200px;</span>           /* Same width as images height */
+    height: 40px;
+    border-top: 1px solid #666;
+    padding-top: 9px;       /* height 50px altogether */
+    position: absolute;
+    <span class="grayBg">top: 75px;              /* width/2 - height/2 */</span>
+    <span class="grayBg">left: -75px;            /* height/2 - width/2 */</span>
+    background: #444;
+    color: #999;
+    font: 1.5em "Impact" !important;
+}
+
+.ss_rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* Image row */
+ul.ss_accordion {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    <span class="aquaBg">height: 200px;</span>      /* Same height as images height */
+    <span class="pinkBg">width: 700px;</span>       /* Images width + 200px (4 headings) */
+    overflow: hidden;
+    background: #666;
+    position: relative;
+}
+
+ul.ss_accordion + ul.ss_accordion {
+    padding: 0;
+    border-top: 0.5em solid white;
+}
+ 
+.ss_accordion li {
+    position: relative;
+    float: left;
+    <span class="aquaBg">height: 200px;</span>     /* Same height as images heght */
+    width: 50px;
+    overflow: hidden;
+}
+ 
+.ss_accordion li img {
+    float: left;
+    margin-left: 50px;
+}
+ 
+.ss_accordion li.active {
+    <span class="limeBg">width: 550px;</span> 	/*Same width as in plugin.js */
+}
+</pre>
+			<h2>Script</h2>
+<pre>
+$(document).ready(function(){
+  (function($) {
+    $.fn.slideshow = function() {
+      activeItem = $(".ss_accordion:first li:last");
+      $(activeItem).addClass('active');
+      $(".active p.ss_heading").css("color", "white");
+
+      $(".ss_accordion li").hover(function(){
+        $(".active p.ss_heading").css("color", "none");
+        $(activeItem).animate({width: "50px"}, {duration:300, queue:false});
+        // Change width according to the images width + 50px (heading)
+        $(this).animate(<span class="limeBg">{width: "550px"}</span>, {duration:300, queue:false});
+        $("p.ss_heading").css("color", "none");
+        $("p.ss_heading", this).css("color", "white");
+        activeItem = this;
+      });
+    };
+  })(jQuery);
+  $(".ss_accordion").slideshow();
+});
+</pre>
+		</div>
+		<!-- End of aside div -->
+		<h2>1. Download from GitHub</h2>
+		<button class="download center" onclick="window.location.href='http://github.com/vanjaanderson/slideshow'">Download</button>
+		<h2>2. Link source in header</h2>
+		<p>Make sure the stylesheet and script source are linked correctly between &lt;head>&lt;/head>.<br />Latest jQuery-script can be downloaded at <a href="http://jquery.com">jQuery.com</a>.</p>
+<pre style="width:700px">
+&lt;link rel="stylesheet" type="text/css" href="slideshow.css">
+&lt;script src="jquery-1.11.0.js">&lt;/script>
+&lt;script src="slideshow.js">&lt;/script>
+</pre>
+		
+		<h2>3. Customize the content (HTML)</h2>
+		<ol>
+			<li>
+				<p><strong>slideshow/images</strong> are placed in folder with the same name and linked into the html-code:</p>
+<pre>
+<span class="orangeBg">&lt;img src="images/img1.jpg" /></span>
+</pre>
+			</li>
+			<li>
+				<p><strong>Headings</strong> are written inside:</p>
+<pre>
+<span class="yellowBg">&lt;p class='ss_heading ss_rotate'>Image 1&lt;/p></span>
+</pre>
+				<p>element tags.</p>
+			</li>
+			<li>
+				<p><strong>Captions</strong> are written inside:</p>
+<pre>
+<span class="whiteBg">&lt;div class='ss_caption'></span>
+  <span class="whiteBg">&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis </span>
+  <span class="whiteBg">volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.&lt;/p></span>
+  <span class="whiteBg">&lt;p>Another paragraph.&lt;/p></span>
+<span class="whiteBg">&lt;/div></span>
+</pre>
+				<p>element tags.</p>
+			</li>
+			<li>
+				<p>A new <strong>row of images</strong> are written inside:</p>
+<pre>
+<div class="lilacBg">&lt;ul&nbsp;class='ss_accordion'>
+        . . .
+&lt;/ul></div>
+</pre>
+			</li>
+		</ol>
+		<h2>4. Customize the look (CSS)</h2>
+		<p>Predefined size of images in this slideshow is: 500px (width) x 200px (height). <br />To change size of the images, follow instructions below: </p>
+		<ol>
+			<li>
+				<p><strong>Width</strong> of the images are changed where <span class="limeBg">marked green</span>. You must change on every occasion.<br />
+				The width of the heading (50px) have to be added to the images width to show correctly.</p>
+			</li>
+			<li>
+				<p><strong>Height</strong> of the images are changed where <span class="aquaBg">marked cyan</span>. You must change on every occasion.</p>
+			</li>
+			<li>
+				<p><strong>Width of slideshow (accordion)</strong> equals the width of the images plus 4 headings (4 x 50px).<br />
+				Change where <span class="pinkBg">marked pink</span>. You must change on every occasion.</p>
+			</li>
+		</ol>
+		<h3>Positioning of the headings</h3>
+		<p>When changing the size of the images, you must correct the positioning of the headings.<br />
+		The formula to get the right position is: top-position = width / 2 - height / 2, and left-position = height / 2 - width / 2.<br />
+		Change where <span class="grayBg">marked gray</span>.</p>
+		
+		<hr style="margin:2em 0 0 0; width:700px;" />
+
+		<h2>About me</h2>
+		<img src="vanja_250.jpg" alt="" />
+		<p>I am a swedish woman, 49 years old and fairly geeky!<br />
+			This is part of an assignment in a course in Javascript I participate on Blekinge Institute of Technology, Sweden.<br />
+		<a href="http://vanjaanderson.com" target="_blank">My homepage</a> (in swedish).</p>
+	</div>
+	</body>
+</html>

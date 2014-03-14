@@ -18,7 +18,7 @@ Latest jQuery-script can be downloaded at <a href="http://jquery.com">jQuery.com
 ##Customize the content (HTML)
 
 1. **Images** are placed in folder with the same name and linked into the html-code:
-	<pre>&lt;p&nbsp;img src="images/img1.jpg" /></pre> &nbsp;element tags.
+	<pre>&lt;&nbsp;img src="images/img1.jpg" /></pre> &nbsp;element tags.
 
 2. **Headings** are written inside:
 	<pre>&lt;p class='ss_heading ss_rotate'>Image 1&lt;/p></pre> &nbsp;element tags.

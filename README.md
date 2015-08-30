@@ -1,7 +1,7 @@
 Slideshow with horizontal accordion-effect
 ===
 ##Working Demo
-Working demo is displayed on my page: [Slideshow](http://vanjaswebb.se/incl/content/bth/javascript/playground/plugin/index.html).
+Working demo is displayed on my page: [Slideshow](http://www.vanjaswebb.se/horizontal-accordion).
 
 ##Description
 Place your favourite images in this extensible slideshow-plugin, made in jQuery.
